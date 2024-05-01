@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Shopping_Web_application</display-name>
+<servlet>
+<servlet-name>Addition</servlet-name>
+<servlet-class>shopping.Server.Servers</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Addition</servlet-name>
+<url-pattern>/Add</url-pattern>
+</servlet-mapping>
+</web-app>
