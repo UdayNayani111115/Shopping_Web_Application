@@ -42,9 +42,9 @@ import jakarta.servlet.http.HttpServletResponse;
 
     	    	public String Jdbc(String input) {
     	    	StringBuilder result=new StringBuilder();
-    	        String url = "jdbc:mysql://localhost:3306/Shopping_Web_Application";
-    	        String username = "root";
-    	        String password = "152015Uday@";
+    	        String url = "jdbc and sql connection url";
+    	        String username = "sql username";
+    	        String password = "sql password";
 
     	        try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
@@ -52,7 +52,7 @@ import jakarta.servlet.http.HttpServletResponse;
 					e.printStackTrace();
 				}
     	        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-    	            String sql = "SELECT * FROM Products WHERE product_name = ?";
+    	            String sql = "SELECT * FROM Products WHERE Coulmn_name = ?";
 
     	            try (PreparedStatement statement = connection.prepareStatement(sql)) {
     	                statement.setString(1, input);
